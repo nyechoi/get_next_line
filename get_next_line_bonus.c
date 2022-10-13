@@ -6,7 +6,7 @@
 /*   By: nye-eun- <nye-eun-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:51:17 by nye-eun-          #+#    #+#             */
-/*   Updated: 2022/10/11 19:29:06 by nye-eun-         ###   ########.fr       */
+/*   Updated: 2022/10/13 17:07:56 by nye-eun-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static char	*ft_substr(char const *s,
 	size_t	size;
 
 	if (!s)
-	return (NULL);
+		return (NULL);
 	size = ft_strlen(s);
 	if (start > size)
 	{
@@ -32,7 +32,7 @@ static char	*ft_substr(char const *s,
 	len = len + 1;
 	sub = malloc(len);
 	if (!sub)
-	return (NULL);
+		return (NULL);
 	ft_strlcpy(sub, s + start, len);
 	return (sub);
 }
@@ -62,9 +62,9 @@ static char	*cut(char **str)
 	ft_free(str);
 	str[0] = ft_substr(aux, i + 1, ft_strlen(aux));
 	ft_free(&aux);
-	if (!ft_strchr(ret, '\n')) //Não encontra \n no retorno, libera a estática
+	if (!ft_strchr(ret, '\n'))
 	{
-		if (!ft_strlen(ret)) //Retorno alocado sem conteúdo e não tem nada para retornar
+		if (!ft_strlen(ret))
 			ft_free(&ret);
 		ft_free(str);
 	}
@@ -73,7 +73,6 @@ static char	*cut(char **str)
 
 char	*get_next_line(int fd)
 {
-	
 	char		*buff;
 	int			size;
 	char		*aux;

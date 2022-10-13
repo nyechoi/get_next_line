@@ -5,13 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nye-eun- <nye-eun-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 13:51:53 by nye-eun-          #+#    #+#             */
-/*   Updated: 2022/10/11 19:04:40 by nye-eun-         ###   ########.fr       */
+/*   Created: 2022/10/13 16:54:17 by nye-eun-          #+#    #+#             */
+/*   Updated: 2022/10/13 17:08:03 by nye-eun-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # include <unistd.h>
 # include <stdlib.h>
